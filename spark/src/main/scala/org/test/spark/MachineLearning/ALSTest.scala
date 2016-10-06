@@ -20,7 +20,7 @@ object ALSTest {
       .setMaster("local")
     val sc = new SparkContext(conf)
     
-    val fileInput = "MovieLens_1000000r_3900i_6040u.txt"
+    val fileInput = "ALS_MovieLens_100000r_1682i_943u.dat"
 
     // Load and parse the data
     val data = sc.textFile(fileInput)
