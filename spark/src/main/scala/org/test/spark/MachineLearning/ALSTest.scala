@@ -58,6 +58,7 @@ object ALSTest {
     // Save and load model
     model.save(sc, fileInput + ".model")
 
+    
     //    val sameModel = MatrixFactorizationModel.load(sc, "target/tmp/myCollaborativeFilter")
 
   }
