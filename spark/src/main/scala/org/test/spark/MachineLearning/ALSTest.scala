@@ -16,11 +16,11 @@ object ALSTest {
 
     //Start the Spark context
     val conf = new SparkConf()
-      .setAppName("PiEstimation")
+      .setAppName("ALSTest")
       .setMaster("local")
     val sc = new SparkContext(conf)
     
-    val fileInput = "ALS_MovieLens_100000r_1682i_943u.dat"
+    val fileInput = "ALS_MovieLens_50000r_1682i_943u.txt"
 
     // Load and parse the data
     val data = sc.textFile(fileInput)
